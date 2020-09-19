@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Forms</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Javascript Form validation</h1>
+      <div id="form-div">
+        <label for="i-email">
+          <span>Email</span>
+          <input type="email" name="" id="i-email" class="inputs" />
+          <span id="error-0" class="error"></span>
+        </label>
+        <br />
+        <label for="i-country">
+          <span>Country</span>
+          <input type="text" id="i-country" class="inputs" />
+          <span id="error-1" class="error"></span>
+        </label>
+        <br />
+        <label for="i-zip">
+          <span>ZIP code</span>
+          <input type="text" id="i-zip" class="inputs" />
+          <span id="error-2" class="error"></span>
+        </label>
+        <br />
+        <label for="i-password">
+          <span>Password</span>
+          <input type="password" name="" id="i-password" class="inputs" />
+          <span id="error-3" class="error"></span>
+        </label>
+        <br />
+        <label for="i-confirm-password">
+          <span>Confirm Password</span>
+          <input
+            type="password"
+            name=""
+            id="i-confirm-password"
+            class="inputs"
+          />
+          <span id="error-4" class="error"></span>
+        </label>
+        <br />
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: rgb(44, 44, 44);
+      }
+
+      h1,
+      label {
+        color: white;
+      }
+
+      .error {
+        background-color: rgb(240, 109, 109);
+        padding: 5px;
+        display: none;
+      }
+
+      .error-input {
+        background-color: rgb(240, 109, 109);
+      }
+
+      .success-input {
+        background-color: rgb(125, 233, 125);
+      }
+    </style>
+
+    <script src="app.js"></script>
+  </body>
+</html>
